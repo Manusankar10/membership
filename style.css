@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Overlay Container */
+.overlay-container {
+    position: relative;
+    width: 400px;
+    height: 220px;
+    background: rgba(30, 30, 60, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
+/* Lightning Video Background */
+.lightning-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.6;
+    pointer-events: none;
+    filter: brightness(1.2) contrast(1.1);
+}
+
+/* Membership Goal Content */
+.membership-goal {
+    position: relative;
+    z-index: 1;
+    color: #e3f7ff;
+    padding: 20px;
+    text-align: center;
+}
+
+.killua-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    box-shadow: 0 0 15px rgba(162, 235, 255, 0.8);
+}
+
+.goal-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.goal-bar-container {
+    width: 85%;
+    height: 15px;
+    margin: 15px auto;
+    background: #222;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+.goal-progress {
+    height: 100%;
+    width: 10%; /* Initial progress (5 out of 50) */
+    background: linear-gradient(90deg, #5edaff, #8bfaff);
+    transition: width 0.3s ease-in-out;
+    box-shadow: 0 0 12px rgba(99, 212, 255, 0.7);
+}
+
+.goal-text {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #b0f4ff;
+    text-shadow: 0 0 5px rgba(200, 255, 255, 0.5);
+}

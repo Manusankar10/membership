@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Killua Membership Goal Overlay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay-container">
+        <!-- Lightning Video Background -->
+        <video class="lightning-video" autoplay muted loop>
+            <source src="https://cdn.pixabay.com/video/2022/08/15/127915-739777024_large.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Membership Goal Content -->
+        <div class="membership-goal">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSv-WP-qKgXMGUGOKXVwLsOHSryEsUmxMeDg&s" alt="Killua" class="killua-image">
+            <h1 class="goal-title">Membership Goal</h1>
+            <div class="goal-bar-container">
+                <div id="progress" class="goal-progress"></div>
+            </div>
+            <p id="goal-text" class="goal-text">0 / 50</p> <!-- This will be dynamically updated -->
+        </div>
+    </div>
+
+    <!-- Include the JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
