@@ -1,5 +1,5 @@
 let currentMembers = 100;  // Start with 100 members
-let goalMembers = 50;      // Set the goal to 50 (or any other number)
+let goalMembers = 500;      // Set the goal to 50 (or any other number)
 
 // Function to update progress bar and text
 function updateProgressBar(current, goal) {
