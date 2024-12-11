@@ -1,29 +1,23 @@
-let currentMembers = 100;  // Start with 100 members
-let goalMembers = 500;      // Set the goal to 50 (or any other number)
+// Initial goal state
+let currentProgress = 0;
+const maxGoal = 50; // Max membership goal
+const goalText = document.getElementById('goal-text');
+const progressBar = document.getElementById('progress');
 
-// Function to update progress bar and text
-function updateProgressBar(current, goal) {
-    let progressElement = document.getElementById("progress");
-    let goalTextElement = document.getElementById("goal-text");
+// Function to update the progress bar
+function updateProgress() {
+    // Calculate the progress percentage
+    let progressPercent = (currentProgress / maxGoal) * 100;
 
-    // Calculate percentage
-    let percentage = (current / goal) * 100;
-
-    // Update progress bar width
-    progressElement.style.width = percentage + "%";
-
-    // Update goal text
-    goalTextElement.textContent = current + " / " + goal;
+    // Update the progress bar width and text
+    progressBar.style.width = progressPercent + '%';
+    goalText.textContent = `${currentProgress} / ${maxGoal}`;
 }
 
-// Call the function initially to set the progress to the starting point
-updateProgressBar(currentMembers, goalMembers);
-
-// Example: Update after a new member joins
-function addMember() {
-    currentMembers++;
-    updateProgressBar(currentMembers, goalMembers);
-}
-
-// This can be triggered by a button or other event, for example:
-document.getElementById("addMemberButton").addEventListener("click", addMember);
+// Simulate progress updates (this can be replaced with actual dynamic data)
+setInterval(() => {
+    if (currentProgress < maxGoal) {
+        currentProgress++;
+        updateProgress();
+    }
+}, 1000); // Update every 1 second (simulating goal updates)

@@ -87,14 +87,3 @@ body {
     color: #b0f4ff;
     text-shadow: 0 0 5px rgba(200, 255, 255, 0.5);
 }
-/* Add this rule in your CSS */
-button {
-    display: block; /* By default, display the button */
-}
-
-/* In production, hide the button */
-body.prod button {
-    display: none;
-}
-
-
