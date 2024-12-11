@@ -1,6 +1,6 @@
 // Initial goal state
 let currentProgress = 0;
-const maxGoal = 50; // Max membership goal
+const maxGoal = 500; // Max membership goal
 const goalText = document.getElementById('goal-text');
 const progressBar = document.getElementById('progress');
 
